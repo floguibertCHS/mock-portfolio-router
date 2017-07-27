@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 // IMPORT EMAIL COMPONENT
-
 
 export default class Splash extends Component {
   render() {
@@ -12,18 +11,20 @@ export default class Splash extends Component {
       "padding": "100px"
     }
     let subHeadings = {
-      "color": "#fff",
+      "color": "#fff"
     }
 
     return (
       <div className="app-body findus offset col-lg-10 col-lg-offset-1">
         <section className="row" style={style}>
           <div className="col-lg-8 map">
-            <h3 className="sub-headings" style={subHeadings}>The Home Page</h3>
+            <h3 className="headings-white" style={subHeadings}>Home</h3>
 
+            <h3 className="sub-headings" style={subHeadings}>Lorem ipsum</h3>
+
+          </div>
+        </section>
       </div>
-    </section>
-  </div>
     );
   }
 }

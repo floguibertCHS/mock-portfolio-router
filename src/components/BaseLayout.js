@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
 // IMPORT LINK
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
+
 import About from './About';
 import Portfolio from './Portfolio';
 import Splash from './Splash';
+import Contact from './Contact';
+import References from './References';
+
+
 
 export default class BaseLayout extends Component {
   render() {
@@ -39,17 +44,24 @@ export default class BaseLayout extends Component {
             <div className="navbar-header">
               <ul className="nav navbar-nav">
                 <li style={navTitle}>
-                  <Link to="/">
-                    <img className="img-logo" src="images/sea.svg"/></Link>
+                  <NavLink activeClassName="selected" className="nav-link" exact to="/">
+                    <img className="img-logo" src="images/sea.svg"/></NavLink>
+
                 </li>
                 <li>
-                  <Link to="/Home">Home</Link>
+                  <NavLink activeClassName="selected" className="nav-link" to="/Home">Home</NavLink>
                 </li>
                 <li>
-                  <Link to="/About">About</Link>
+                  <NavLink activeClassName="selected" className="nav-link" to="/About">About</NavLink>
                 </li>
                 <li>
-                  <Link to="/Portfolio">Portfolio</Link>
+                  <NavLink activeClassName="selected" className="nav-link" to="/Portfolio">Portfolio</NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="selected" className="nav-link" to="/Contact">Contact</NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="selected" className="nav-link" to="/References">References</NavLink>
                 </li>
               </ul>
             </div>
